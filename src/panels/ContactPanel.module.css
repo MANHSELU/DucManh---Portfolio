@@ -1,0 +1,131 @@
+.contact {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  min-height: min(68vh, 560px);
+}
+
+.text {
+  padding: clamp(24px, 5vw, 56px);
+  display: grid;
+  align-content: center;
+  gap: 20px;
+}
+
+.text h2 {
+  font-family: var(--f-display);
+  font-weight: 800;
+  font-size: var(--t-2xl);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin: 0;
+}
+
+.text p {
+  margin: 0;
+  color: var(--muted);
+  max-width: 36ch;
+}
+
+.mailRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+}
+
+.mail {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: var(--t-lg);
+  color: var(--teal);
+  overflow-wrap: anywhere;
+}
+
+.mail:hover {
+  text-decoration: underline;
+}
+
+.copy {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: transparent;
+  border: 1px solid var(--line-strong);
+  cursor: pointer;
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+}
+
+.copy:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+.socials {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+
+.socials a {
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 46px;
+  padding: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: rgba(47, 216, 200, 0.1);
+  border: 1px solid rgba(47, 216, 200, 0.48);
+  color: #a9fff5;
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.socials a span {
+  color: var(--teal);
+}
+
+.socials a:hover {
+  border-color: var(--teal);
+  background: rgba(47, 216, 200, 0.2);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.scene {
+  position: relative;
+  min-height: 340px;
+  background: radial-gradient(60% 70% at 50% 60%, rgba(47, 216, 200, 0.12), transparent 70%);
+}
+
+.scene canvas {
+  position: absolute;
+  inset: 0;
+}
+
+.bubble {
+  position: absolute;
+  left: 52%;
+  top: 10%;
+  padding: 8px 12px;
+  border-radius: 12px 12px 12px 2px;
+  background: var(--card-2);
+  border: 1px solid rgba(47, 216, 200, 0.45);
+  z-index: 2;
+}
+
+@media (max-width: 760px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .socials a {
+    transition: none;
+  }
+}

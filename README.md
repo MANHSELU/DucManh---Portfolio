@@ -1,8 +1,47 @@
 # Portfolio · Phan Đức Mạnh
 
-Portfolio 3D dạng hệ hành tinh: ngôi sao trung tâm giới thiệu bản thân, các hành tinh mở dự án, quy trình, kỹ năng và liên hệ.
+Portfolio cá nhân dạng 3D: một hệ hành tinh có thể xoay và bấm vào. Ngôi sao ở giữa là phần giới thiệu bản thân, mỗi hành tinh xung quanh mở ra một phần nội dung. Trang có hai ngôn ngữ, tiếng Việt và tiếng Anh.
 
-Công nghệ: Vite, React, React Three Fiber, Drei, Zustand, CSS Modules.
+## Giới thiệu
+
+- **Họ tên:** Phan Đức Mạnh
+- **Vai trò:** Phân tích nghiệp vụ - Phát triển phần mềm
+- **Nơi ở:** Đà Nẵng, Việt Nam
+- **Email:** ducmanh.it.work@gmail.com
+- **GitHub:** https://github.com/MANHSELU
+- **Facebook:** https://www.facebook.com/ucmanh.385561
+
+Lập trình viên đến từ Việt Nam, thích phân tích nhu cầu nghiệp vụ và chuyển chúng thành giải pháp phần mềm thiết thực. Xem mỗi dự án là cơ hội để học thêm và làm quen với những bài toán mới.
+
+## Portfolio có gì
+
+Trang gồm 5 phần, mỗi phần là một hành tinh:
+
+| Phần | Nội dung |
+| --- | --- |
+| Giới thiệu | Ảnh chân dung, nhân vật 3D, giới thiệu bản thân, vai trò và các dự án đang làm |
+| Dự án | Hai dự án có ảnh chụp màn hình, mô tả, tính năng chính, công nghệ và vai trò của tôi |
+| Quy trình | Cách tôi làm việc từ phân tích yêu cầu đến bàn giao |
+| Kỹ năng | Ngôn ngữ lập trình, framework, cơ sở dữ liệu và công cụ |
+| Liên hệ | Email, GitHub, Facebook, có nút sao chép nhanh |
+
+### Dự án nổi bật
+
+- **eTask:** hệ thống quản lý văn bản đến và giao nhiệm vụ cho cơ quan nhà nước. Văn bản được vào sổ, trình lãnh đạo, chuyển xuống đơn vị rồi thành nhiệm vụ có hạn xử lý. Công nghệ: React, TanStack Query, Node.js, Express, Prisma, PostgreSQL.
+- **AGM:** hệ thống quản lý và vận hành garage ô tô gồm web cho nhân viên, web và ứng dụng di động cho khách hàng, đi từ đặt lịch, tiếp nhận xe, sửa chữa, xuất phụ tùng đến thanh toán. Công nghệ: React, TypeScript, Node.js, Express, Sequelize, PostgreSQL.
+
+### Kỹ năng
+
+| Nhóm | Công nghệ |
+| --- | --- |
+| Ngôn ngữ lập trình | JavaScript, Java, HTML, CSS |
+| Framework | React JS, Node.js, Spring Boot, Sequelize |
+| Cơ sở dữ liệu | MySQL, PostgreSQL, SQL Server |
+| Công cụ hỗ trợ | Git, GitHub, Postman, Jira, Claude |
+
+## Công nghệ dùng để làm trang
+
+Vite, React, React Three Fiber, Drei, Zustand, CSS Modules.
 
 ## Chạy trên máy
 

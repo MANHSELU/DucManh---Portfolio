@@ -1,0 +1,122 @@
+.nav {
+  position: fixed;
+  top: calc(env(safe-area-inset-top, 0px) + 16px);
+  left: 0;
+  right: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: max(24px, env(safe-area-inset-left, 0px));
+  padding-right: max(24px, env(safe-area-inset-right, 0px));
+  pointer-events: none;
+}
+
+.nav > * {
+  pointer-events: auto;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.pill {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2px;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(12, 17, 18, 0.82);
+  border: 1px solid var(--line-strong);
+  backdrop-filter: blur(10px);
+}
+
+.pill button {
+  background: none;
+  border: 0;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background 0.25s, color 0.25s;
+}
+
+.pill button:hover {
+  color: var(--fg);
+}
+
+.pill button.on {
+  background: var(--teal);
+  color: var(--bg);
+}
+
+.language {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: rgba(12, 17, 18, 0.82);
+  backdrop-filter: blur(10px);
+}
+
+.language button {
+  padding: 7px 9px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  cursor: pointer;
+}
+
+.language button:hover,
+.language button.languageOn {
+  background: var(--teal);
+  color: var(--bg);
+}
+
+.cta {
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--teal);
+  color: var(--bg);
+  border: 0;
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 24px var(--teal-glow);
+}
+
+@media (max-width: 920px) {
+  .nav {
+    justify-content: flex-end;
+  }
+  .pill {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pill button,
+  .language button,
+  .cta {
+    transition: none;
+  }
+}

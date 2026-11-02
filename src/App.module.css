@@ -1,0 +1,7 @@
+.room {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(70% 60% at 62% 55%, rgba(47, 216, 200, 0.12), transparent 70%),
+    linear-gradient(180deg, #0d1415, #070a0a);
+}
